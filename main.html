@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html class="common" lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+
+    <title>MAIN</title>
+
+    <!-- Styles -->
+    <link href="./assets/style.css" rel="stylesheet" />
+    <link href="./assets/custom.css" rel="stylesheet" />
+</head>
+
+<body class="common__body">
+    <div id="app" class="app">
+        <div class="app__rotate"><img src="" alt="">
+            <div class="app__rotate-title">Для более комфортного использования, <br> поверните Ваше устройство
+                вертикально</div>
+        </div>
+        <header class="header"></header>
+        <main class="main">
+            <div class="feed section _with-control">
+                <div class="section__header _only-main">
+                    <div class="section__header-main">
+                        <h1 class="title changeableTitle" data-default="рекомендованное">рекомендованное</h1>
+                    </div>
+                </div>
+                <div class="post-list">
+                    <div>Пусто</div>
+                </div>
+                <div class="section__title">
+                    <h1 class="title replacingTitle">мои звезды</h1>
+                </div>
+                <div class="post-list">
+                    <div class="post">
+                        <div class="post__main" id="postId-36" data-id="36" style="margin-bottom: 10px;">
+                            <div class="post__audio">
+                                <audio class="audio">
+                                </audio>
+                                <span class="duration"></span>
+                                <button class="audioControl" onclick="togglePlaying('36', 'post', this)"><img src="assets/play_alt.svg"></button>
+                                <img class="post__audio-img" src="assets/1629706916_phpohvowo.jpg" alt="">
+                                <span class="current-time post__duration"></span>
+                            </div>
+                            <div class="post__info">
+                                <div class="post__header">
+                                    <div class="post__title">
+                                        <a href="#">
+                                            BOGDAN KRAVCHENKO
+                                        </a>
+                                    </div>
+                                    <div class="post__date">11 месяцев назад</div>
+                                </div>
+                                <div class="post__actions">
+                                    <a class="post__action post__action_like " style="cursor: pointer;"><i class="icon icon-heart "></i></a>
+                                    <a class="post__action post__action_likes-list popupActivation " data-popup="people" href="">4</a>
+                                    <a class="post__action popupActivation _active " href="" data-to-id="36" data-to-type="post" data-popup="record_5" data-type-popup="forComment">
+                                        <i class="icon icon-egg _shadowed "></i>
+                                    </a>
+                                    <a class="post__action post__action_comments-list popupActivation _active " data-to-id="36" data-to-type="post" data-popup="comments" href="">3</a>
+                                </div>
+                            </div>
+
+                            <div class="post__menu">
+                                <a class="post__menu-item popupActivation" href="#" data-popup="post-36-menu">
+                                    <i class="icon icon-menu"></i>
+                                </a>
+
+                                <form style="margin: 0;" id="deleteFormPost36" class="post__menu-item _delete" action="#" method="POST">
+                                    <input type="hidden" name="_token" value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S">
+                                    <label class="record__multimedia-item">
+                                        <span onclick="confirmDeletePost(36)"><i class="icon icon-trash"></i></span>
+                                        <input type="hidden" name="post_id" value="36">
+                                    </label>
+                                </form>
+
+                            </div>
+                            <canvas class="progress"></canvas>
+                        </div>
+                        <div class="post__img">
+                            <img src="assets/1623091914_IMG_20201116_213815.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="post post_linked">
+                        <div class="post__main commentPost" id="commentId-61" data-id="61" style="margin-bottom: 10px;">
+                            <div class="post__audio">
+                                <audio class="audio" data-post-id="61" ontimeupdate="updateBar('61', 'comment', this)" src="#">
+                                </audio>
+                                <span class="duration"></span>
+                                <button class="audioControl" onclick="togglePlaying('61', 'comment', this)"><img src="assets/play_alt.svg"></button>
+                                <img class="post__audio-img" src="assets/1629706916_phpohvowo.jpg" width="64" height="60" alt="">
+                                <span class="current-time post__duration"></span>
+                            </div>
+                            <div class="post__info">
+                                <div class="post__header">
+                                    <div class="post__title"><a href="/profile/KRAY">KRAY</a></div>
+                                    <div class="post__date">3 дня назад</div>
+                                </div>
+                                <div class="post__actions">
+                                    <a class="post__action post__action_like _active " style="cursor: pointer;"><i class="icon icon-heart _shadowed "></i></a>
+                                    <a class="post__action post__action_likes-list popupActivation _active " data-popup="people" href="">1</a>
+                                </div>
+                            </div>
+                            <canvas class="progress"></canvas>
+                        </div>
+                        <input type="hidden" class="notifId" value="">
+                    </div>
+
+                    <div class="popup" data-popup="post-61-menu">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item" href="">пожаловаться</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        href="https://add-egg-dev.u-w.me/messenger/forwardList/61">переслать</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        onclick="copyToCliboard(61)">скопировать ссылку</a>
+                                    <a class="menu__item popupActivation" style="cursor: pointer;"
+                                        data-popup="playlist_61">добавить в плейлист</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup" data-popup="playlist_61">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/61/8">MediaDRUGS</a>
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/61/10">мысли о сайте</a>
+                                    <form action="https://add-egg-dev.u-w.me/playlists/createPlaylist" method="post"
+                                        class="menu__item">
+                                        <input type="hidden" name="_token"
+                                            value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S">
+                                        <input type="hidden" name="post_id" value="61">
+                                        <input type="text" name="name" placeholder="создать плэйлист" required>
+                                        <button type="submit" class="form__button">создать</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup" data-popup="post-36-menu">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item"
+                                        href="https://add-egg-dev.u-w.me/profile/promote/post/36">продвигать</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        href="https://add-egg-dev.u-w.me/messenger/forwardList/36">переслать</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        onclick="copyToCliboard(36)">скопировать ссылку</a>
+                                    <a class="menu__item popupActivation" style="cursor: pointer;"
+                                        data-popup="playlist_36">добавить в плейлист</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup" data-popup="playlist_36">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/36/8">MediaDRUGS</a>
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/36/10">мысли о сайте</a>
+                                    <form action="https://add-egg-dev.u-w.me/playlists/createPlaylist" method="post"
+                                        class="menu__item">
+                                        <input type="hidden" name="_token"
+                                            value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S">
+                                        <input type="hidden" name="post_id" value="36">
+                                        <input type="text" name="name" placeholder="создать плэйлист" required>
+                                        <button type="submit" class="form__button">создать</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post__main" id="postId-167" data-id="167" style="margin-bottom: 10px;">
+                            <div class="post__audio">
+                                <audio class="audio" data-post-id="167" ontimeupdate="updateBar('167', 'post', this)"
+                                    src="#">
+                                </audio>
+                                <span class="duration"></span>
+                                <button class="audioControl" onclick="togglePlaying('167', 'post', this)"><img
+                                        src="assets/play_alt.svg"></button>
+                                <img class="post__audio-img" src="assets/1629706916_phpohvowo.jpg" alt="">
+                                <span class="current-time post__duration"></span>
+                            </div>
+                            <div class="post__info">
+                                <div class="post__header">
+                                    <div class="post__title">
+                                        <a href="/profile/DANET">
+                                            DANET
+                                        </a>
+                                    </div>
+                                    <div class="post__date">10 месяцев назад</div>
+                                </div>
+                                <div class="post__actions">
+                                    <a class="post__action post__action_like " style="cursor: pointer;"><i
+                                            class="icon icon-heart "></i></a>
+                                    <a class="post__action post__action_likes-list popupActivation " data-popup="people"
+                                        href="">1</a>
+                                    <a class="post__action popupActivation " href="" data-to-id="167"
+                                        data-to-type="post" data-popup="record_5" data-type-popup="forComment">
+                                        <i class="icon icon-egg "></i>
+                                    </a>
+                                    <a class="post__action post__action_comments-list popupActivation " data-to-id="167"
+                                        data-to-type="post" data-popup="comments" href="">1</a>
+                                </div>
+                            </div>
+
+                            <div class="post__menu">
+                                <a class="post__menu-item popupActivation" href="" data-popup="post-167-menu">
+                                    <i class="icon icon-menu"></i>
+                                </a>
+                            </div>
+                            <canvas class="progress"></canvas>
+                        </div>
+                    </div>
+                    <div class="post post_linked">
+                        <div class="post__main commentPost" id="commentId-61" data-id="61" style="margin-bottom: 10px;">
+                            <div class="post__audio">
+                                <audio class="audio"></audio>
+                                <span class="duration"></span>
+                                <button class="audioControl" onclick="togglePlaying('61', 'comment', this)"><img src="assets/play_alt.svg"></button>
+                                <img class="post__audio-img" src="assets/1629706916_phpohvowo.jpg" width="64" height="60" alt="">
+                                <span class="current-time post__duration"></span>
+                            </div>
+                            <div class="post__info">
+                                <div class="post__header">
+                                    <div class="post__title"><a href="/profile/KRAY">KRAY</a></div>
+                                    <div class="post__date">3 дня назад</div>
+                                </div>
+                                <div class="post__actions">
+                                    <a class="post__action post__action_like _active " style="cursor: pointer;"><i class="icon icon-heart _shadowed "></i></a>
+                                    <a class="post__action post__action_likes-list popupActivation _active " data-popup="people" href="">1</a>
+                                </div>
+                            </div>
+                            <canvas class="progress"></canvas>
+                        </div>
+                        <input type="hidden" class="notifId" value="">
+                    </div>
+
+                    <div class="popup" data-popup="post-61-menu">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item" href="">пожаловаться</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        href="https://add-egg-dev.u-w.me/messenger/forwardList/61">переслать</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        onclick="copyToCliboard(61)">скопировать ссылку</a>
+                                    <a class="menu__item popupActivation" style="cursor: pointer;"
+                                        data-popup="playlist_61">добавить в плейлист</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup" data-popup="playlist_61">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/61/8">MediaDRUGS</a>
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/61/10">мысли о сайте</a>
+                                    <form action="https://add-egg-dev.u-w.me/playlists/createPlaylist" method="post"
+                                        class="menu__item">
+                                        <input type="hidden" name="_token"
+                                            value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S">
+                                        <input type="hidden" name="post_id" value="61">
+                                        <input type="text" name="name" placeholder="создать плэйлист" required>
+                                        <button type="submit" class="form__button">создать</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup" data-popup="post-36-menu">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item"
+                                        href="https://add-egg-dev.u-w.me/profile/promote/post/36">продвигать</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        href="https://add-egg-dev.u-w.me/messenger/forwardList/36">переслать</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        onclick="copyToCliboard(36)">скопировать ссылку</a>
+                                    <a class="menu__item popupActivation" style="cursor: pointer;"
+                                        data-popup="playlist_36">добавить в плейлист</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup" data-popup="playlist_36">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/36/8">MediaDRUGS</a>
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/36/10">мысли о сайте</a>
+                                    <form action="https://add-egg-dev.u-w.me/playlists/createPlaylist" method="post"
+                                        class="menu__item">
+                                        <input type="hidden" name="_token"
+                                            value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S">
+                                        <input type="hidden" name="post_id" value="36">
+                                        <input type="text" name="name" placeholder="создать плэйлист" required>
+                                        <button type="submit" class="form__button">создать</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post__main" id="postId-167" data-id="167" style="margin-bottom: 10px;">
+                            <div class="post__audio">
+                                <audio class="audio" data-post-id="167" ontimeupdate="updateBar('167', 'post', this)"
+                                    src="#">
+                                </audio>
+                                <span class="duration"></span>
+                                <button class="audioControl" onclick="togglePlaying('167', 'post', this)"><img
+                                        src="assets/play_alt.svg"></button>
+                                <img class="post__audio-img" src="assets/1629706916_phpohvowo.jpg" alt="">
+                                <span class="current-time post__duration"></span>
+                            </div>
+                            <div class="post__info">
+                                <div class="post__header">
+                                    <div class="post__title">
+                                        <a href="/profile/DANET">
+                                            DANET
+                                        </a>
+                                    </div>
+                                    <div class="post__date">10 месяцев назад</div>
+                                </div>
+                                <div class="post__actions">
+                                    <a class="post__action post__action_like " style="cursor: pointer;"><i
+                                            class="icon icon-heart "></i></a>
+                                    <a class="post__action post__action_likes-list popupActivation " data-popup="people"
+                                        href="">1</a>
+                                    <a class="post__action popupActivation " href="" data-to-id="167"
+                                        data-to-type="post" data-popup="record_5" data-type-popup="forComment">
+                                        <i class="icon icon-egg "></i>
+                                    </a>
+                                    <a class="post__action post__action_comments-list popupActivation " data-to-id="167"
+                                        data-to-type="post" data-popup="comments" href="">1</a>
+                                </div>
+                            </div>
+
+                            <div class="post__menu">
+                                <a class="post__menu-item popupActivation" href="" data-popup="post-167-menu">
+                                    <i class="icon icon-menu"></i>
+                                </a>
+                            </div>
+                            <canvas class="progress"></canvas>
+                        </div>
+                    </div>
+                    <div class="post post_linked">
+                        <div class="post__main commentPost" id="commentId-61" data-id="61" style="margin-bottom: 10px;">
+                            <div class="post__audio">
+                                <audio class="audio"></audio>
+                                <span class="duration"></span>
+                                <button class="audioControl" onclick="togglePlaying('61', 'comment', this)"><img src="assets/play_alt.svg"></button>
+                                <img class="post__audio-img" src="assets/1629706916_phpohvowo.jpg" width="64" height="60" alt="">
+                                <span class="current-time post__duration"></span>
+                            </div>
+                            <div class="post__info">
+                                <div class="post__header">
+                                    <div class="post__title"><a href="/profile/KRAY">KRAY</a></div>
+                                    <div class="post__date">3 дня назад</div>
+                                </div>
+                                <div class="post__actions">
+                                    <a class="post__action post__action_like _active " style="cursor: pointer;"><i class="icon icon-heart _shadowed "></i></a>
+                                    <a class="post__action post__action_likes-list popupActivation _active " data-popup="people" href="">1</a>
+                                </div>
+                            </div>
+                            <canvas class="progress"></canvas>
+                        </div>
+                        <input type="hidden" class="notifId" value="">
+                    </div>
+
+                    <div class="popup" data-popup="post-61-menu">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item" href="">пожаловаться</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        href="https://add-egg-dev.u-w.me/messenger/forwardList/61">переслать</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        onclick="copyToCliboard(61)">скопировать ссылку</a>
+                                    <a class="menu__item popupActivation" style="cursor: pointer;"
+                                        data-popup="playlist_61">добавить в плейлист</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup" data-popup="playlist_61">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/61/8">MediaDRUGS</a>
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/61/10">мысли о сайте</a>
+                                    <form action="https://add-egg-dev.u-w.me/playlists/createPlaylist" method="post"
+                                        class="menu__item">
+                                        <input type="hidden" name="_token"
+                                            value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S">
+                                        <input type="hidden" name="post_id" value="61">
+                                        <input type="text" name="name" placeholder="создать плэйлист" required>
+                                        <button type="submit" class="form__button">создать</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup" data-popup="post-36-menu">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item"
+                                        href="https://add-egg-dev.u-w.me/profile/promote/post/36">продвигать</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        href="https://add-egg-dev.u-w.me/messenger/forwardList/36">переслать</a>
+                                    <a class="menu__item" style="cursor: pointer;"
+                                        onclick="copyToCliboard(36)">скопировать ссылку</a>
+                                    <a class="menu__item popupActivation" style="cursor: pointer;"
+                                        data-popup="playlist_36">добавить в плейлист</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup" data-popup="playlist_36">
+                        <div class="popup__scroll _top">
+                            <div class="popup__content _bg">
+                                <div class="menu">
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/36/8">MediaDRUGS</a>
+                                    <a class="menu__item" href="/playlists/saveToPlaylist/36/10">мысли о сайте</a>
+                                    <form action="https://add-egg-dev.u-w.me/playlists/createPlaylist" method="post"
+                                        class="menu__item">
+                                        <input type="hidden" name="_token"
+                                            value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S">
+                                        <input type="hidden" name="post_id" value="36">
+                                        <input type="text" name="name" placeholder="создать плэйлист" required>
+                                        <button type="submit" class="form__button">создать</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post__main" id="postId-167" data-id="167" style="margin-bottom: 10px;">
+                            <div class="post__audio">
+                                <audio class="audio" data-post-id="167" ontimeupdate="updateBar('167', 'post', this)"
+                                    src="#">
+                                </audio>
+                                <span class="duration"></span>
+                                <button class="audioControl" onclick="togglePlaying('167', 'post', this)"><img
+                                        src="assets/play_alt.svg"></button>
+                                <img class="post__audio-img" src="assets/1629706916_phpohvowo.jpg" alt="">
+                                <span class="current-time post__duration"></span>
+                            </div>
+                            <div class="post__info">
+                                <div class="post__header">
+                                    <div class="post__title">
+                                        <a href="/profile/DANET">
+                                            DANET
+                                        </a>
+                                    </div>
+                                    <div class="post__date">10 месяцев назад</div>
+                                </div>
+                                <div class="post__actions">
+                                    <a class="post__action post__action_like " style="cursor: pointer;"><i
+                                            class="icon icon-heart "></i></a>
+                                    <a class="post__action post__action_likes-list popupActivation " data-popup="people"
+                                        href="">1</a>
+                                    <a class="post__action popupActivation " href="" data-to-id="167"
+                                        data-to-type="post" data-popup="record_5" data-type-popup="forComment">
+                                        <i class="icon icon-egg "></i>
+                                    </a>
+                                    <a class="post__action post__action_comments-list popupActivation " data-to-id="167"
+                                        data-to-type="post" data-popup="comments" href="">1</a>
+                                </div>
+                            </div>
+
+                            <div class="post__menu">
+                                <a class="post__menu-item popupActivation" href="" data-popup="post-167-menu">
+                                    <i class="icon icon-menu"></i>
+                                </a>
+                            </div>
+                            <canvas class="progress"></canvas>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Navigation bar -->
+                <div class="navigation">
+                    <div class="navigation__item _new _active navigate">
+                      <a href="postten.html" class="link-full"></a>
+                      <img src="assets/Vector 31.png" alt="">
+                    </div>
+                    <div class="navigation__item _new navigate">
+                      <a href="message.html" class="link-full"></a>
+                      <i class="icon icon-mail"></i>
+                      <span>СООБЩЕНИЯ</span>
+                    </div>
+                    <div class="navigation__item navigate">
+                      <a href="search.html" class="link-full"></a>
+                      <i class="icon icon-search"></i>
+                      <span>ПОИСК</span>
+                    </div>
+                    <div class="navigation__item _new navigate">
+                      <a href="notification.html" class="link-full"></a>
+                      <i class="icon icon-bell"></i>
+                      <span>УВЕДОМЛЕНИЯ</span>
+                    </div>
+                    <div class="navigation__item  navigate">
+                      <a href="profile.html" class="link-full"></a>
+                      <i class="icon icon-user"></i>
+                      <span>ПРОФИЛЬ</span>
+                    </div>
+                  </div>
+            </div>
+            <div class="popup" data-popup="people">
+                <div class="popup__scroll _bottom">
+                    <div class="popup__content _bg">
+                        <div class="sorting"></div>
+                        <div class="likes-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" data-popup="comments" data-to-id="" data-to-type="">
+                <div class="popup__scroll _bottom">
+                    <div class="popup__content _bg">
+                        <div class="sorting">
+                            <a class="sorting__item _active" href=""><span>дата</span></a>
+                            <a class="sorting__item" href=""><i class="icon icon-heart"></i></a>
+                            <a class="sorting__item" href=""><i class="icon icon-egg-thick"></i></a>
+                        </div>
+                        <div class="comments-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="popup" id="passwordError" data-popup="password_error">
+                    <div class="popup__scroll">
+                        <div class="popup__content">
+                            <div class="confirmation notification"
+                                style="color: black; height: 34px; line-height: 28px;">введен неверный пароль</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+        <div class="popup" data-popup="confirmation">
+            <div class="popup__scroll">
+                <div class="popup__content">
+                    <div class="confirmation">
+                        <div class="confirmation__main">
+                            <div class="confirmation__title">Подтверждение</div>
+                            <div class="confirmation__description">заблокировать</div>
+                            <div class="confirmation__name">sabina.kravchenko</div>
+                        </div>
+                        <div class="confirmation__img"><img src="/img/post-mini.png"></div>
+                        <div class="confirmation__actions"><a class="confirmation__action" href="">yes</a><a
+                                class="confirmation__action" href="">no</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="confirmation_2">
+            <div class="popup__scroll">
+                <div class="popup__content">
+                    <div class="confirmation">
+                        <div class="confirmation__main">
+                            <div class="confirmation__title">Подтверждение</div>
+                            <div class="confirmation__description">переслать сообщение для</div>
+                            <div class="confirmation__name">sabina.kravchenko</div>
+                        </div>
+                        <div class="confirmation__img"><img src="/img/post-mini.png"></div>
+                        <div class="confirmation__actions"><a class="confirmation__action" href="">yes</a><a
+                                class="confirmation__action" href="">no</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="confirmation_3">
+            <div class="popup__scroll">
+                <div class="popup__content">
+                    <div class="confirmation">
+                        <div class="confirmation__main">
+                            <div class="confirmation__title">Подтверждение</div>
+                            <div class="confirmation__description">пожаловаться на</div>
+                            <div class="confirmation__name">sabina.kravchenko</div>
+                        </div>
+                        <div class="confirmation__img"><img src="/img/post-mini.png"></div>
+                        <div class="confirmation__actions"><a class="confirmation__action" href="">yes</a><a
+                                class="confirmation__action" href="">no</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="confirmation_4">
+            <div class="popup__scroll">
+                <div class="popup__content">
+                    <div class="confirmation">
+                        <div class="confirmation__main">
+                            <div class="confirmation__title">Подтверждение</div>
+                            <div class="confirmation__description">удалить пост?</div>
+                        </div>
+                        <div class="confirmation__actions"><a class="confirmation__action" style="cursor: pointer;"
+                                id="confirmPostDeleteSubmit">yes</a><a style="cursor: pointer;"
+                                class="confirmation__action confirmation4__action-close">no</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="record">
+            <div class="popup__scroll _bottom">
+                <div class="popup__content _bg">
+                    <div class="record section">
+                        <div class="record__header">
+                            <div class="record-play">
+                                <div class="record-play__progress"></div><a class="record-play__button" href=""><i
+                                        class="icon icon-play_alt"><span class="path1"></span><span
+                                            class="path2"></span></i></a><a class="record-play__close" href=""><i
+                                        class="icon icon-close"></i></a>
+                            </div>
+                        </div>
+                        <div class="record__picture"><a class="record__picture-close" href=""><i
+                                    class="icon icon-close"></i></a><img class="record__picture-img"
+                                src=""></div><a class="record__button" href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="record_3">
+            <div class="popup__scroll _bottom">
+                <div class="popup__content _bg">
+                    <div class="record section">
+                        <div class="record__header">
+                            <div class="record-play">
+                                <div class="record-play__progress" style="width:70%"></div><a
+                                    class="record-play__button" href=""><i class="icon icon-pause"><span
+                                            class="path1"></span><span class="path2"></span><span
+                                            class="path3"></span><span class="path4"></span></i></a><a
+                                    class="record-play__close" href=""><i class="icon icon-close"></i></a>
+                            </div>
+                        </div>
+                        <div class="record__multimedia"><a class="record__multimedia-item _active" href=""><i
+                                    class="icon icon-picture"></i></a><a class="record__multimedia-item" href=""><i
+                                    class="icon icon-camera"></i></a></div><a class="record__button _active"
+                            href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="record_4">
+            <div class="popup__scroll _bottom">
+                <div class="popup__content _bg">
+                    <div class="record section">
+                        <div class="record__header">
+                            <div class="record-play">
+                                <div class="record-play__progress"></div><a class="record-play__button _active"
+                                    href=""><i class="icon icon-play_alt"><span class="path1"></span><span
+                                            class="path2"></span></i></a><a class="record-play__close" href=""><i
+                                        class="icon icon-close"></i></a>
+                            </div>
+                        </div>
+                        <div class="record__multimedia"><a class="record__multimedia-item" href=""><i
+                                    class="icon icon-picture"></i></a><a class="record__multimedia-item _active"
+                                href=""><i class="icon icon-camera"></i></a></div><a class="record__button" href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <popups-for-post></popups-for-post>
+        <div class="popup" data-popup="record_6">
+            <div class="popup__scroll _bottom">
+                <div class="popup__content _bg">
+                    <div class="record section">
+                        <div class="record__header">
+                            <div class="record__note">удерживайте для записи</div>
+                        </div>
+                        <div class="record__multimedia"><a class="record__multimedia-item" href=""><i
+                                    class="icon icon-music"></i></a><a class="record__multimedia-item" href=""><i
+                                    class="icon icon-microphone"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="record_7">
+            <div class="popup__scroll _bottom">
+                <div class="popup__content _bg">
+                    <div class="record section">
+                        <div class="record__header">
+                            <div class="record__note _recording">00:06</div>
+                        </div>
+                        <div class="record__multimedia"><a class="record__multimedia-item _hidden" href=""><i
+                                    class="icon icon-music"></i></a><a class="record__multimedia-item _active"
+                                href=""><i class="icon icon-microphone"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

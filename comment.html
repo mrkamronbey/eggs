@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html class="common" lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+
+  <title>SEARCH</title>
+
+  <!-- Styles -->
+  <link href="./assets/style.css" rel="stylesheet" />
+  <link href="./assets/custom.css" rel="stylesheet" />
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+</head>
+
+<body class="common__body">
+  <div id="app" class="app">
+    <div class="app__rotate">
+      <img src="./assets/rotate.png" alt="" />
+      <div class="app__rotate-title">
+        Для более комфортного использования, <br />
+        поверните Ваше устройство вертикально
+      </div>
+    </div>
+    <header class="header"></header>
+    <main class="main">
+      <div data-popup="header-menu" class="popup">
+        <div class="popup__scroll _top">
+          <div class="popup__content _bg">
+            <div class="menu">
+              <div class="menu__item">
+                <form id="uploadFileAvatar" enctype="multipart/form-data" action="#" method="POST" style="margin: 0px">
+                  <input type="hidden" name="_token" value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+                  <label class="record__multimedia-item"><span>заменить аватарку</span>
+                    <input type="file" name="file-avatar" accept="image/*" hidden="hidden" /></label>
+                </form>
+              </div>
+              <a href="#" class="menu__item">продвигать</a>
+              <a data-popup="record_5" data-type-popup="greeting" href="#" class="menu__item popupActivation">изменить
+                приветствие</a>
+              <div id="copyLinkBlock" class="menu__item">
+                <div class="tooltip">
+                  <div onclick="myFunction()" onmouseout="outFunc()" style="font-size: 20px; cursor: pointer">
+                    <i class="icon icon-share"></i>
+                    <a id="myTooltip" class="menu__item">скопировать ссылку</a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" onclick="event.preventDefault();
+                   document.getElementById(&#39;logout-form&#39;).submit();" class="menu__item">
+                выход
+              </a>
+              <form id="logout-form" action="#" method="POST" class="d-none">
+                <input type="hidden" name="_token" value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+              </form>
+            </div>
+          </div>
+          <div class="popup__scroll-bottom">
+            <div class="popup__scroll-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="main">
+        <div class="new-posts section _with-control _notifications">
+          <div class="section__header _only-main">
+            <div class="section__header-top">
+              <div class="profile__header yes-padding">
+                <div class="profile__title">Уведомления</div>
+              </div>
+            </div>
+          </div>
+          <div class="post-list">
+            <div class="post-list-buttons">
+              <a href="notification.html" class="post__list _circle _btn ">лайки</a>
+              <a href="followes.html" class="post__list _circle _btn ">подписчики</a>
+              <a href="#" class="post__list _btn activbtn">комментарии</a>
+            </div>
+            <div class="post__group">
+              <div class="comment-post personal">
+                <div class="post__main">
+                  <div class="post__audio">
+                    <audio class="audio"></audio>
+                    <span class="duration"></span>
+                    <button class="audioControl" onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                      <img src="./assets/play_alt.svg" />
+                    </button>
+                    <img class="post__audio-img" src="./assets/Rectangle 17.png" alt="" />
+                    <span class="current-time post__duration"></span>
+                  </div>
+                  <div class="post__info">
+                    <div class="post__title small-size">
+                      <a href="#">sabina.kravchenko</a>
+                      <span>23 августа в 23:30</span>
+                      <div class="comment-title-describe">краткое описание темы сообщения</div>
+                    </div>
+                    <div class="post__labels">
+                      <i class="icon icon-menu"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-add _post">
+                  <div class="post__main _comment">
+                    <div class="post__audio">
+                      <audio class="audio"></audio>
+                      <span class="duration"></span>
+                      <button class="audioControl" onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                        <img src="./assets/play_alt.svg" />
+                      </button>
+                      <img class="post__audio-img" src="./assets/Rectangle 327.png" alt="" />
+                      <span class="current-time post__duration"></span>
+                    </div>
+                    <div class="post__info">
+                      <div class="post__title small-size">
+                        <a href="#">bat.ko</a>
+                        <span>22 августа в 9:37</span>
+                        <div class="comment-title-describe">Прокомментировал Вашу запись</div>
+                      </div>
+                      <div class="post__labels">
+                        <i class="icon icon-menu"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post__main _liked _comment">
+                    <img src="assets/Vector 43.png" alt="">
+                    <div class="post__title black-color">
+                      <span>Нравится: 361</span>
+                      <div class="comment-title-describe grey-color">Посмотреть все комментарии (111)</div>
+                    </div>
+                    <i class="icon icon-headphone"> <span class="comment-count">969</span></i>
+                  </div>
+
+                  <div class="simple-comment">
+                    <div class="comment-img">
+                      <img src="assets/1629706916_phpohvowo.jpg" alt="">
+                    </div>
+                    <div class="comment-title">комментировать</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="post__group">
+              <div class="comment-post personal">
+                <div class="post__main">
+                  <div class="post__audio">
+                    <audio class="audio"></audio>
+                    <span class="duration"></span>
+                    <button class="audioControl" onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                      <img src="./assets/play_alt.svg" />
+                    </button>
+                    <img class="post__audio-img" src="./assets/Rectangle 17.png" alt="" />
+                    <span class="current-time post__duration"></span>
+                  </div>
+                  <div class="post__info">
+                    <div class="post__title small-size">
+                      <a href="#">sabina.kravchenko</a>
+                      <span>23 августа в 23:30</span>
+                      <div class="comment-title-describe">краткое описание темы сообщения</div>
+                    </div>
+                    <div class="post__labels">
+                      <i class="icon icon-menu"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__img">
+                  <img src="assets/Rectangle 321.png" alt="">
+                </div>
+                <div class="comment-add _post">
+                  <div class="post__main _comment">
+                    <div class="post__audio">
+                      <audio class="audio"></audio>
+                      <span class="duration"></span>
+                      <button class="audioControl" onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                        <img src="./assets/play_alt.svg" />
+                      </button>
+                      <img class="post__audio-img" src="./assets/Rectangle 327.png" alt="" />
+                      <span class="current-time post__duration"></span>
+                    </div>
+                    <div class="post__info">
+                      <div class="post__title small-size">
+                        <a href="#">bat.ko</a>
+                        <span>22 августа в 9:37</span>
+                        <div class="comment-title-describe">Прокомментировал Вашу запись</div>
+                      </div>
+                      <div class="post__labels">
+                        <i class="icon icon-menu"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post__main _liked _comment">
+                    <img src="assets/Vector 43.png" alt="">
+                    <div class="post__title black-color">
+                      <span>Нравится: 1</span>
+                      <div class="comment-title-describe grey-color">Посмотреть все комментарии (111)</div>
+                    </div>
+                    <i class="icon icon-headphone"> <span class="comment-count">969</span></i>
+                  </div>
+
+                  <div class="simple-comment">
+                    <div class="comment-img">
+                      <img src="assets/1629706916_phpohvowo.jpg" alt="">
+                    </div>
+                    <div class="comment-title">комментировать</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="post__group">
+              <div class="comment-post personal">
+                <div class="post__main">
+                  <div class="post__audio">
+                    <audio class="audio"></audio>
+                    <span class="duration"></span>
+                    <button class="audioControl" onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                      <img src="./assets/play_alt.svg" />
+                    </button>
+                    <img class="post__audio-img" src="./assets/Rectangle 17.png" alt="" />
+                    <span class="current-time post__duration"></span>
+                  </div>
+                  <div class="post__info">
+                    <div class="post__title small-size">
+                      <a href="#">sabina.kravchenko</a>
+                      <span>23 августа в 23:30</span>
+                      <div class="comment-title-describe">краткое описание темы сообщения</div>
+                    </div>
+                    <div class="post__labels">
+                      <i class="icon icon-menu"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-add _post">
+                  <div class="post__main _comment">
+                    <div class="post__audio">
+                      <audio class="audio"></audio>
+                      <span class="duration"></span>
+                      <button class="audioControl" onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                        <img src="./assets/play_alt.svg" />
+                      </button>
+                      <img class="post__audio-img" src="./assets/Rectangle 303.png" alt="" />
+                      <span class="current-time post__duration"></span>
+                    </div>
+                    <div class="post__info">
+                      <div class="post__title small-size">
+                        <a href="#">bat.ko</a>
+                        <span>22 августа в 9:37</span>
+                        <div class="comment-title-describe">Прокомментировал Вашу запись</div>
+                      </div>
+                      <div class="post__labels">
+                        <i class="icon icon-menu"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__img _comments">
+                    <img src="assets/Rectangle 304.png" alt="">
+                  </div>
+                  <div class="post__main _liked _comment">
+                    <img src="assets/Vector 43.png" alt="">
+                    <div class="post__title black-color">
+                      <span>Нравится: 1</span>
+                      <div class="comment-title-describe grey-color">Посмотреть все комментарии (111)</div>
+                    </div>
+                    <i class="icon icon-headphone"> <span class="comment-count">969</span></i>
+                  </div>
+
+                  <div class="simple-comment">
+                    <div class="comment-img">
+                      <img src="assets/1629706916_phpohvowo.jpg" alt="">
+                    </div>
+                    <div class="comment-title">комментировать</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="post__group">
+              <div class="comment-post personal">
+                <div class="post__main">
+                  <div class="post__audio">
+                    <audio class="audio"></audio>
+                    <span class="duration"></span>
+                    <button class="audioControl" onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                      <img src="./assets/play_alt.svg" />
+                    </button>
+                    <img class="post__audio-img" src="./assets/Rectangle 17.png" alt="" />
+                    <span class="current-time post__duration"></span>
+                  </div>
+                  <div class="post__info">
+                    <div class="post__title small-size">
+                      <a href="#">sabina.kravchenko</a>
+                      <span>23 августа в 23:30</span>
+                      <div class="comment-title-describe">краткое описание темы сообщения</div>
+                    </div>
+                    <div class="post__labels">
+                      <i class="icon icon-menu"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__img">
+                  <img src="assets/Rectangle 321.png" alt="">
+                </div>
+                <div class="comment-add _post">
+                  <div class="post__main _comment">
+                    <div class="post__audio">
+                      <audio class="audio"></audio>
+                      <span class="duration"></span>
+                      <button class="audioControl" onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                        <img src="./assets/play_alt.svg" />
+                      </button>
+                      <img class="post__audio-img" src="./assets/Rectangle 303.png" alt="" />
+                      <span class="current-time post__duration"></span>
+                    </div>
+                    <div class="post__info">
+                      <div class="post__title small-size">
+                        <a href="#">bat.ko</a>
+                        <span>22 августа в 9:37</span>
+                        <div class="comment-title-describe">Прокомментировал Вашу запись</div>
+                      </div>
+                      <div class="post__labels">
+                        <i class="icon icon-menu"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__img _comments">
+                    <img src="assets/Rectangle 318.png" alt="">
+                  </div>
+                  <div class="post__main _liked _comment">
+                    <img src="assets/Vector 43.png" alt="">
+                    <div class="post__title black-color">
+                      <span>Нравится: 1</span>
+                      <div class="comment-title-describe grey-color">Посмотреть все комментарии (111)</div>
+                    </div>
+                    <i class="icon icon-headphone"> <span class="comment-count">969</span></i>
+                  </div>
+
+                  <div class="simple-comment">
+                    <div class="comment-img">
+                      <img src="assets/1629706916_phpohvowo.jpg" alt="">
+                    </div>
+                    <div class="comment-title">комментировать</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="post__group">
+              <div class="comment-post personal">
+                <div class="post__main">
+                  <div class="post__audio">
+                    <audio class="audio"></audio>
+                    <span class="duration"></span>
+                    <button class="audioControl" onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                      <img src="./assets/play_alt.svg" />
+                    </button>
+                    <img class="post__audio-img" src="./assets/post-mini.png" alt="" />
+                    <span class="current-time post__duration"></span>
+                  </div>
+                  <div class="post__info">
+                    <div class="post__title small-size">
+                      <a href="#">sabina.kravchenko</a>
+                      <span>23 августа в 23:30</span>
+                      <div class="comment-title-describe">краткое описание темы сообщения</div>
+                    </div>
+                    <div class="post__labels">
+                      <i class="icon icon-menu"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-add _post">
+                  <div class="post__main _comment">
+                    <div class="post__audio">
+                      <audio class="audio"></audio>
+                      <span class="duration"></span>
+                      <button class="audioControl" onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                        <img src="./assets/play_alt.svg" />
+                      </button>
+                      <img class="post__audio-img" src="./assets/1629706916_phpohvowo.jpg" alt="" />
+                      <span class="current-time post__duration"></span>
+                    </div>
+                    <div class="post__info">
+                      <div class="post__title small-size">
+                        <a href="#">bat.ko</a>
+                        <span>22 августа в 9:37</span>
+                        <div class="comment-title-describe">Прокомментировал Вашу запись</div>
+                      </div>
+                      <div class="post__labels">
+                        <i class="icon icon-menu"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post__img _comments">
+                    <img src="assets/1623091914_IMG_20201116_213815.jpg" alt="">
+                  </div>
+
+                  <div class="post__main _liked _comment">
+                    <img src="assets/Vector 32.png" alt="">
+                    <div class="post__title black-color">
+                      <span>Нравится: 1</span>
+                      <div class="comment-title-describe grey-color">Посмотреть все комментарии (111)</div>
+                    </div>
+                    <i class="icon icon-headphone"> <span class="comment-count">969</span></i>
+                  </div>
+
+                  <div class="simple-comment">
+                    <div class="comment-img">
+                      <img src="assets/1629706916_phpohvowo.jpg" alt="">
+                    </div>
+                    <div class="comment-title">комментировать</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+
+      <!--  navigation button -->
+
+      <div class="navigation">
+        <div class="navigation__item _new navigate">
+          <a href="postten.html" class="link-full"></a>
+          <img src="assets/Vector 30.png" alt="">
+          <span>ГЛАВНАЯ</span>
+        </div>
+        <div class="navigation__item _new navigate">
+          <a href="message.html" class="link-full"></a>
+          <i class="icon icon-mail"></i>
+          <span>СООБЩЕНИЯ</span>
+        </div>
+        <div class="navigation__item navigate">
+          <a href="search.html" class="link-full"></a>
+          <i class="icon icon-search"></i>
+          <span>ПОИСК</span>
+        </div>
+        <div class="navigation__item _active _new navigate">
+          <a href="#" class="link-full"></a>
+          <i class="icon icon-bell"></i>
+        </div>
+        <div class="navigation__item  navigate">
+          <a href="profile.html" class="link-full"></a>
+          <i class="icon icon-user"></i>
+          <span>ПРОФИЛЬ</span>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="./assets/app.js.download" defer=""></script>
+</body>
+
+</html>

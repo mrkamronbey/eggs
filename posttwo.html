@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html class="common" lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+
+  <title>Post two</title>
+
+  <!-- Styles -->
+  <link href="./assets/style.css" rel="stylesheet" />
+  <link href="./assets/custom.css" rel="stylesheet" />
+</head>
+
+<body class="common__body">
+  <div id="app" class="app">
+    <div class="app__rotate">
+      <img src="./assets/rotate.png" alt="" />
+      <div class="app__rotate-title">
+        Для более комфортного использования, <br />
+        поверните Ваше устройство вертикально
+      </div>
+    </div>
+    <header class="header"></header>
+    <main class="main">
+      <div data-popup="header-menu" class="popup">
+        <div class="popup__scroll _top">
+          <div class="popup__content _bg">
+            <div class="menu">
+              <div class="menu__item">
+                <form id="uploadFileAvatar" enctype="multipart/form-data" action="#" method="POST" style="margin: 0px">
+                  <input type="hidden" name="_token" value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+                  <label class="record__multimedia-item"><span>заменить аватарку</span>
+                    <input type="file" name="file-avatar" accept="image/*" hidden="hidden" /></label>
+                </form>
+              </div>
+              <a href="#" class="menu__item">продвигать</a>
+              <a data-popup="record_5" data-type-popup="greeting" href="#" class="menu__item popupActivation">изменить
+                приветствие</a>
+              <div id="copyLinkBlock" class="menu__item">
+                <div class="tooltip">
+                  <div onclick="myFunction()" onmouseout="outFunc()" style="font-size: 20px; cursor: pointer">
+                    <i class="icon icon-share"></i>
+                    <a id="myTooltip" class="menu__item">скопировать ссылку</a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" onclick="event.preventDefault();
+                   document.getElementById(&#39;logout-form&#39;).submit();" class="menu__item">
+                выход
+              </a>
+              <form id="logout-form" action="#" method="POST" class="d-none">
+                <input type="hidden" name="_token" value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+              </form>
+            </div>
+          </div>
+          <div class="popup__scroll-bottom">
+            <div class="popup__scroll-icon">
+              <i class="icon icon-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile section _with-control">
+        <div class="profile__main">
+          <img src="./assets/1629706916_phpohvowo.jpg" alt="" class="profile__illustration" />
+          <a id="profilePlay" class="profile__play" style="cursor: pointer"><img src="./assets/play_alt.svg"
+              alt="" /></a>
+          <a id="profilePause" class="profile__play" style="cursor: pointer; display: none; padding: 0px"><img
+              src="./assets/pause.svg" alt="" /></a>
+          <audio id="greetingAudio"></audio>
+        </div>
+        <div class="navigation _alt">
+          <div class="navigation__item _active ">
+            <a href="profile.html" class="link-full"></a>
+            <img src="assets/playlist (2).png" alt="">
+            <div class="navigation__items _span">
+              <span> посты </span>
+            </div>
+          </div>
+          <div class="navigation__item">
+            <a href="#" class="link-full"></a>
+            <i class="icon icon-star"></i>
+            <div class="navigation__items _span">
+              <span> подписки </span>
+              <span class="_span-span"> 36 </span>
+            </div>
+          </div>
+          <div class="navigation__item ">
+            <a href="popular.html" class="link-full"></a>
+            <i class="icon icon-headphone"></i>
+            <div class="navigation__items _span">
+              <span> слушатели </span>
+              <span class="_span-span"> 322 </span>
+            </div>
+          </div>
+        </div>
+        <div data-child="playlists" class="filter">
+          <a href="#" data-popup="playlists" class="link-full popupActivation"></a>
+          <div class="filter__item">плейлист:</div>
+          <div data-value="" class="filter__item">все</div>
+          <div class="filter__item"><i class="icon icon-down"></i></div>
+        </div>
+        <div class="post-list">
+          <div class="post__list-audio-icon">
+            <img src="./assets/pluss.png" alt="">
+          </div>
+          <div class="post__title _bold-title">
+            Добавьте аудиосообщение или музыку
+          </div>
+          <div class="post__title-message _center-title">
+            Аудио и фото, которым вы поделитесь, <br />
+            будут отображаться в вашем профиле
+          </div>
+          <div class="post__title post__title-blue">
+            <a href="#">Создайте свой первый АУДИО пост</a>
+          </div>
+        </div>
+       
+
+        <!--  navigation button -->
+
+      </div>
+      <input type="hidden" id="linkForCopy" value="add-egg-dev.u-w.me/profile/BOGDAN KRAVCHENKO" />
+      <div data-popup="confirmation_subscribe" class="popup">
+        <div class="popup__scroll">
+          <div class="popup__content">
+            <div class="confirmation">
+              <div class="confirmation__main">
+                <div class="confirmation__title">Подтверждение</div>
+                <div class="confirmation__description">Подписаться</div>
+                <div class="confirmation__name">BOGDAN KRAVCHENKO</div>
+              </div>
+              <div class="confirmation__img">
+                <img src="./assets/1629706916_phpohvowo.jpg" />
+              </div>
+              <div class="confirmation__actions">
+                <a id="confirmationSubscribeSubmit" class="confirmation__action" style="cursor: pointer">yes</a><a
+                  class="confirmation__action confirmation__action-close" style="cursor: pointer">no</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-popup="confirmation_unsubscribe" class="popup">
+        <div class="popup__scroll">
+          <div class="popup__content">
+            <div class="confirmation">
+              <div class="confirmation__main">
+                <div class="confirmation__title">Подтверждение</div>
+                <div class="confirmation__description">Отписаться</div>
+                <div class="confirmation__name">BOGDAN KRAVCHENKO</div>
+              </div>
+              <div class="confirmation__img">
+                <img src="./assets/1629706916_phpohvowo.jpg" />
+              </div>
+              <div class="confirmation__actions">
+                <a id="confirmationUnsubscribeSubmit" class="confirmation__action" style="cursor: pointer">yes</a><a
+                  class="confirmation__action confirmation2__action-close" style="cursor: pointer">no</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-popup="confirmation_block_user" class="popup">
+        <div class="popup__scroll">
+          <div class="popup__content">
+            <div class="confirmation">
+              <div class="confirmation__main">
+                <div class="confirmation__title">Подтверждение</div>
+                <div class="confirmation__description">
+                  Заблокировать пользователя?
+                </div>
+                <div class="confirmation__name">BOGDAN KRAVCHENKO</div>
+              </div>
+              <div class="confirmation__img">
+                <img src="./assets/1629706916_phpohvowo.jpg" />
+              </div>
+              <div class="confirmation__actions">
+                <a id="confirmBlokUserSubmit" class="confirmation__action" style="cursor: pointer">yes</a><a
+                  class="confirmation__action confirmation3__action-close" style="cursor: pointer">no</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-popup="confirmation_unblock_user" class="popup">
+        <div class="popup__scroll">
+          <div class="popup__content">
+            <div class="confirmation">
+              <div class="confirmation__main">
+                <div class="confirmation__title">Подтверждение</div>
+                <div class="confirmation__description">
+                  Разблокировать пользователя?
+                </div>
+                <div class="confirmation__name">BOGDAN KRAVCHENKO</div>
+              </div>
+              <div class="confirmation__img">
+                <img src="./assets/1629706916_phpohvowo.jpg" />
+              </div>
+              <div class="confirmation__actions">
+                <a id="confirmUnBlokUserSubmit" class="confirmation__action" style="cursor: pointer">yes</a>
+                <a class="confirmation__action confirmation3__action-close" style="cursor: pointer">no</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-popup="playlists" class="popup">
+        <div class="popup__scroll _bottom">
+          <div class="popup__content _bg">
+            <div class="menu">
+              <a href="#" class="menu__item">все</a>
+              <a href="#" class="menu__item">MediaDRUGS</a>
+              <a href="#" class="menu__item">мысли о сайте</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-popup="people" class="popup">
+        <div class="popup__scroll _bottom">
+          <div class="popup__content _bg">
+            <div class="sorting"></div>
+            <div class="likes-list"></div>
+          </div>
+        </div>
+      </div>
+      <div data-popup="comments" data-to-id="" data-to-type="" class="popup">
+        <div class="popup__scroll _bottom">
+          <div class="popup__content _bg">
+            <div class="sorting">
+              <a href="#" class="sorting__item _active"><span>дата</span></a>
+              <a href="#" class="sorting__item"><i class="icon icon-heart _shadowed"></i></a>
+              <a href="#" class="sorting__item"><i class="icon icon-egg -thick"></i></a>
+            </div>
+            <div class="comments-list"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="passwordError" data-popup="password_error" class="popup">
+          <div class="popup__scroll">
+            <div class="popup__content">
+              <div class="confirmation notification" style="color: black; height: 34px; line-height: 28px">
+                введен неверный пароль
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+    <div data-popup="confirmation" class="popup">
+      <div class="popup__scroll">
+        <div class="popup__content">
+          <div class="confirmation">
+            <div class="confirmation__main">
+              <div class="confirmation__title">Подтверждение</div>
+              <div class="confirmation__description">заблокировать</div>
+              <div class="confirmation__name">sabina.kravchenko</div>
+            </div>
+            <div class="confirmation__img">
+              <img src="./assets/post-mini.png" />
+            </div>
+            <div class="confirmation__actions">
+              <a href="#" class="confirmation__action">yes</a><a href="#" class="confirmation__action">no</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-popup="confirmation_2" class="popup">
+      <div class="popup__scroll">
+        <div class="popup__content">
+          <div class="confirmation">
+            <div class="confirmation__main">
+              <div class="confirmation__title">Подтверждение</div>
+              <div class="confirmation__description">
+                переслать сообщение для
+              </div>
+              <div class="confirmation__name">sabina.kravchenko</div>
+            </div>
+            <div class="confirmation__img">
+              <img src="./assets/post-mini.png" />
+            </div>
+            <div class="confirmation__actions">
+              <a href="#" class="confirmation__action">yes</a><a href="#" class="confirmation__action">no</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-popup="confirmation_3" class="popup">
+      <div class="popup__scroll">
+        <div class="popup__content">
+          <div class="confirmation">
+            <div class="confirmation__main">
+              <div class="confirmation__title">Подтверждение</div>
+              <div class="confirmation__description">пожаловаться на</div>
+              <div class="confirmation__name">sabina.kravchenko</div>
+            </div>
+            <div class="confirmation__img">
+              <img src="./assets/post-mini.png" />
+            </div>
+            <div class="confirmation__actions">
+              <a href="#" class="confirmation__action">yes</a><a href="#" class="confirmation__action">no</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-popup="confirmation_4" class="popup">
+      <div class="popup__scroll">
+        <div class="popup__content">
+          <div class="confirmation">
+            <div class="confirmation__main">
+              <div class="confirmation__title">Подтверждение</div>
+              <div class="confirmation__description">удалить пост?</div>
+            </div>
+            <div class="confirmation__actions">
+              <a id="confirmPostDeleteSubmit" class="confirmation__action" style="cursor: pointer">yes</a><a
+                class="confirmation__action confirmation4__action-close" style="cursor: pointer">no</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-popup="record" class="popup">
+      <div class="popup__scroll _bottom">
+        <div class="popup__content _bg">
+          <div class="record section">
+            <div class="record__header">
+              <div class="record-play">
+                <div class="record-play__progress"></div>
+                <a href="#" class="record-play__button"><i class="icon icon-play_alt"><span class="path1"></span><span
+                      class="path2"></span></i></a><a href="#" class="record-play__close"><i
+                    class="icon icon-close"></i></a>
+              </div>
+            </div>
+            <div class="record__picture">
+              <a href="#" class="record__picture-close"><i class="icon icon-close"></i></a><img src="./assets/post.png"
+                class="record__picture-img" />
+            </div>
+            <a href="#" class="record__button"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-popup="record_3" class="popup">
+      <div class="popup__scroll _bottom">
+        <div class="popup__content _bg">
+          <div class="record section">
+            <div class="record__header">
+              <div class="record-play">
+                <div class="record-play__progress" style="width: 70%"></div>
+                <a href="#" class="record-play__button"><i class="icon icon-pause"><span class="path1"></span><span
+                      class="path2"></span><span class="path3"></span><span class="path4"></span></i></a><a href="#"
+                  class="record-play__close"><i class="icon icon-close"></i></a>
+              </div>
+            </div>
+            <div class="record__multimedia">
+              <a href="#" class="record__multimedia-item _active"><i class="icon icon-picture"></i></a><a href="#"
+                class="record__multimedia-item"><i class="icon icon-camera"></i></a>
+            </div>
+            <a href="#" class="record__button _active"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-popup="record_4" class="popup">
+      <div class="popup__scroll _bottom">
+        <div class="popup__content _bg">
+          <div class="record section">
+            <div class="record__header">
+              <div class="record-play">
+                <div class="record-play__progress"></div>
+                <a href="#" class="record-play__button _active"><i class="icon icon-play_alt"><span
+                      class="path1"></span><span class="path2"></span></i></a><a href="#" class="record-play__close"><i
+                    class="icon icon-close"></i></a>
+              </div>
+            </div>
+            <div class="record__multimedia">
+              <a href="#" class="record__multimedia-item"><i class="icon icon-picture"></i></a><a href="#"
+                class="record__multimedia-item _active"><i class="icon icon-camera"></i></a>
+            </div>
+            <a href="#" class="record__button"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div data-popup="record_5" class="popup popup_record">
+        <div class="popup__scroll _bottom">
+          <div class="popup__content _bg">
+            <div class="record section">
+              <div class="record__header">
+                <!---->
+                <!---->
+              </div>
+              <div class="record__multimedia">
+                <form id="uploadPostAudio" enctype="multipart/form-data" method="POST" style="margin: 0px">
+                  <label class="record__multimedia-item"><a class="record__multimedia-item" style="cursor: pointer"><i
+                        class="icon icon-music"></i></a>
+                    <input type="file" name="file" accept=".mpeg,.mpga,.mp3,.wav" hidden="hidden" /></label>
+                </form>
+                <div class="record__multimedia-item record__multimedia-item_record">
+                  <i class="icon icon-microphone"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-popup="record_2" class="popup">
+        <div class="popup__scroll _bottom">
+          <div class="popup__content _bg">
+            <div class="record section">
+              <div class="record__header">
+                <div class="record-play">
+                  <canvas id="progress" height="100%" class="record-play__progress"
+                    style="width: 236px; background: none"></canvas>
+                  <audio id="audio"></audio>
+                  <button id="audioControl" style="z-index: 99999">
+                    <img src="./assets/play_alt.svg" />
+                  </button>
+                  <form enctype="multipart/form-data" method="POST" style="margin: 0px">
+                    <label class="record__multimedia-item"><a class="record-play__close" style="cursor: pointer"><i
+                          class="icon icon-close"></i></a></label>
+                  </form>
+                </div>
+              </div>
+              <div class="record__multimedia">
+                <form enctype="multipart/form-data" method="POST" style="margin: 0px">
+                  <label class="record__multimedia-item"><a class="record__multimedia-item" style="cursor: pointer"><i
+                        class="icon icon-picture"></i></a>
+                    <input type="file" name="file" accept=".jpeg,.png,.jpg,.gif,.svg" hidden="hidden" /></label>
+                </form>
+                <a data-popup="video_cam" class="record__multimedia-item popupActivation" style="cursor: pointer"><i
+                    class="icon icon-camera"></i></a>
+              </div>
+              <a class="record__button" style="cursor: pointer"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="videoCam" data-popup="video_cam" class="popup">
+        <div class="popup__scroll">
+          <div class="popup__content">
+            <div class="confirmation" style="width: 100%">
+              <div id="videoContent"></div>
+              <video id="video" autoplay="autoplay" style="width: 100%"></video>
+              <button id="snap">Сделать снимок</button>
+              <canvas id="canvas"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-popup="record_6" class="popup">
+      <div class="popup__scroll _bottom">
+        <div class="popup__content _bg">
+          <div class="record section">
+            <div class="record__header">
+              <div class="record__note">удерживайте для записи</div>
+            </div>
+            <div class="record__multimedia">
+              <a href="#" class="record__multimedia-item"><i class="icon icon-music"></i></a><a href="#"
+                class="record__multimedia-item"><i class="icon icon-microphone"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-popup="record_7" class="popup">
+      <div class="popup__scroll _bottom">
+        <div class="popup__content _bg">
+          <div class="record section">
+            <div class="record__header">
+              <div class="record__note _recording">00:06</div>
+            </div>
+            <div class="record__multimedia">
+              <a href="#" class="record__multimedia-item _hidden"><i class="icon icon-music"></i></a><a href="#"
+                class="record__multimedia-item _active"><i class="icon icon-microphone"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./assets/app.js.download" defer=""></script>
+</body>
+
+</html>

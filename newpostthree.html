@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="common" lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+
+    <title>new post three</title>
+
+    <!-- Styles -->
+    <link href="./assets/style.css" rel="stylesheet" />
+    <link href="./assets/custom.css" rel="stylesheet" />
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+</head>
+
+<body class="common__body">
+    <div id="app" class="app">
+        <div class="app__rotate">
+            <img src="./assets/rotate.png" alt="" />
+            <div class="app__rotate-title">
+                Для более комфортного использования, <br />
+                поверните Ваше устройство вертикально
+            </div>
+        </div>
+        <header class="header"></header>
+        <main class="main">
+            <div data-popup="header-menu" class="popup">
+                <div class="popup__scroll _top">
+                    <div class="popup__content _bg">
+                        <div class="menu">
+                            <div class="menu__item">
+                                <form id="uploadFileAvatar" enctype="multipart/form-data" action="#" method="POST"
+                                    style="margin: 0px">
+                                    <input type="hidden" name="_token"
+                                        value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+                                    <label class="record__multimedia-item"><span>заменить аватарку</span>
+                                        <input type="file" name="file-avatar" accept="image/*"
+                                            hidden="hidden" /></label>
+                                </form>
+                            </div>
+                            <a href="#" class="menu__item">продвигать</a>
+                            <a data-popup="record_5" data-type-popup="greeting" href="#"
+                                class="menu__item popupActivation">изменить
+                                приветствие</a>
+                            <div id="copyLinkBlock" class="menu__item">
+                                <div class="tooltip">
+                                    <div onclick="myFunction()" onmouseout="outFunc()"
+                                        style="font-size: 20px; cursor: pointer">
+                                        <i class="icon icon-share"></i>
+                                        <a id="myTooltip" class="menu__item">скопировать ссылку</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" onclick="event.preventDefault();
+                   document.getElementById(&#39;logout-form&#39;).submit();" class="menu__item">
+                                выход
+                            </a>
+                            <form id="logout-form" action="#" method="POST" class="d-none">
+                                <input type="hidden" name="_token" value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="popup__scroll-bottom">
+                        <div class="popup__scroll-icon">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="main">
+                <div class="new-posts section _with-control">
+                    <div class="post">
+                        <div class="post__main" id="postId-36" data-id="36" style="margin-bottom: 10px;">
+                            <div class="post__audio">
+                                <audio class="audio"></audio>
+                                <span class="duration"></span>
+                                <button class="audioControl"
+                                    onclick="togglePlaying(&#39;168&#39;, &#39;post&#39;, this)">
+                                    <img src="./assets/play_alt.svg" />
+                                </button>
+                                <img class="post__audio-img" src="./assets/post-mini.png" alt="" />
+                                <span class="current-time post__duration"></span>
+                            </div>
+                            <div class="post__info">
+                                <div class="post__title post__new-margin">
+                                    <a href="#">sabina.kravchenko</a>
+                                    <div class="comment-title-describe font-big">+ краткое описание темы сообщения</div>
+                                </div>
+                            </div>
+                            <canvas class="progress"></canvas>
+                        </div>
+                        <div class="post__img">
+                            <img src="assets/1623091914_IMG_20201116_213815.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="post__new-egg _new-bottom">
+                        <a href="#" class="profile__main _new-btn">Опубликовать      ></a>
+                    </div>
+                </div>
+            </main>
+
+            <!--  navigation button -->
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="./assets/app.js.download" defer=""></script>
+</body>
+
+</html>

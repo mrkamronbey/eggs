@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="common" lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+
+  <title>SEARCH</title>
+
+  <!-- Styles -->
+  <link href="./assets/style.css" rel="stylesheet" />
+  <link href="./assets/custom.css" rel="stylesheet" />
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body class="common__body">
+  <div id="app" class="app">
+    <div class="app__rotate">
+      <img src="./assets/rotate.png" alt="" />
+      <div class="app__rotate-title">
+        Для более комфортного использования, <br />
+        поверните Ваше устройство вертикально
+      </div>
+    </div>
+    <header class="header"></header>
+    <main class="main">
+      <div data-popup="header-menu" class="popup">
+        <div class="popup__scroll _top">
+          <div class="popup__content _bg">
+            <div class="menu">
+              <div class="menu__item">
+                <form id="uploadFileAvatar" enctype="multipart/form-data" action="#" method="POST" style="margin: 0px">
+                  <input type="hidden" name="_token" value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+                  <label class="record__multimedia-item"><span>заменить аватарку</span>
+                    <input type="file" name="file-avatar" accept="image/*" hidden="hidden" /></label>
+                </form>
+              </div>
+              <a href="#" class="menu__item">продвигать</a>
+              <a data-popup="record_5" data-type-popup="greeting" href="#" class="menu__item popupActivation">изменить
+                приветствие</a>
+              <div id="copyLinkBlock" class="menu__item">
+                <div class="tooltip">
+                  <div onclick="myFunction()" onmouseout="outFunc()" style="font-size: 20px; cursor: pointer">
+                    <i class="icon icon-share"></i>
+                    <a id="myTooltip" class="menu__item">скопировать ссылку</a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" onclick="event.preventDefault();
+                   document.getElementById(&#39;logout-form&#39;).submit();" class="menu__item">
+                выход
+              </a>
+              <form id="logout-form" action="#" method="POST" class="d-none">
+                <input type="hidden" name="_token" value="Kzu3W3RUEUefxhsgk8IA1zyAIuHqBTqc9TUjFI7S" />
+              </form>
+            </div>
+          </div>
+          <div class="popup__scroll-bottom">
+            <div class="popup__scroll-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+        <main class="main">
+            <div class="new-posts section _with-control">
+                <div class="section__header _only-main">
+                  <div class="section__header-top">
+                    <div class="profile__header yes-padding">
+                      <div class="profile__title">Уведомления</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-list">
+                  <div class="post-list-buttons">
+                    <a href="notification.html" class="post__list _btn  ">лайки</a>
+                    <a href="#" class="post__list _btn activbtn">подписчики</a>
+                    <a href="comment.html" class="post__list _btn">комментарии</a>
+                  </div>
+                  <div class="post__group _followers">
+                    <div class="post__main">
+                      <div class="post__audio">
+                          <audio></audio>
+                          <span class="duration"></span>
+                          <img src="./assets/post-mini.png" alt="" class="post__audio-img" />
+                          <span class="current-time post__duration"></span>
+                      </div>
+                      <div class="post__info">
+                        <div class="post__header post-like">
+                            <div class="post__title"><a href="#">sabina.kravchenko </a></div>
+                            <div class="post__description">
+                              <span>оценила</span> <i class="icon icon-filled-heart blinking-color"></i> <span> вашу запись</span>
+                            </div>
+                            <div class="post__date">сегодня в 9:19</div>
+                        </div>
+                        <div class="followers-icon">
+                          <i class="icon icon-headphone"></i>
+                        </div>  
+                      </div>
+                    </div>  
+                    <div class="post__main">
+                      <div class="post__audio">
+                          <audio></audio>
+                          <span class="duration"></span>
+                          <img src="./assets/post-mini.png" alt="" class="post__audio-img" />
+                          <span class="current-time post__duration"></span>
+                      </div>
+                      <div class="post__info">
+                        <div class="post__header post-like">
+                            <div class="post__title"><a href="#">sabina.kravchenko </a></div>
+                            <div class="post__description">
+                              <span>оценила</span> <i class="icon icon-filled-heart blinking-color"></i> <span> вашу запись</span>
+                            </div>
+                            <div class="post__date">сегодня в 9:19</div>
+                        </div>
+                        <div class="followers-icon">
+                          <i class="icon icon-headphone"></i>
+                        </div>  
+                      </div>
+                    </div>  
+                    <div class="post__main">
+                      <div class="post__audio">
+                          <audio></audio>
+                          <span class="duration"></span>
+                          <img src="./assets/post-mini.png" alt="" class="post__audio-img" />
+                          <span class="current-time post__duration"></span>
+                      </div>
+                      <div class="post__info">
+                        <div class="post__header post-like">
+                            <div class="post__title"><a href="#">sabina.kravchenko </a></div>
+                            <div class="post__description">
+                              <span>оценила</span> <i class="icon icon-filled-heart blinking-color"></i> <span> вашу запись</span>
+                            </div>
+                            <div class="post__date">сегодня в 9:19</div>
+                        </div>
+                        <div class="followers-icon">
+                          <i class="icon icon-headphone"></i>
+                        </div>  
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+            </div>   
+        </main>
+
+        <!--  navigation button -->
+
+        <div class="navigation">
+          <div class="navigation__item _new navigate">
+            <a href="postten.html" class="link-full"></a>
+            <img src="assets/Vector 30.png" alt="">
+            <span>ГЛАВНАЯ</span>
+          </div>
+          <div class="navigation__item _new navigate">
+            <a href="message.html" class="link-full"></a>
+            <i class="icon icon-mail"></i>
+            <span>СООБЩЕНИЯ</span>
+          </div>
+          <div class="navigation__item navigate">
+            <a href="search.html" class="link-full"></a>
+            <i class="icon icon-search"></i>
+            <span>ПОИСК</span>
+          </div>
+          <div class="navigation__item _active _new navigate">
+            <a href="#" class="link-full"></a>
+            <i class="icon icon-bell"></i>
+          </div>
+          <div class="navigation__item  navigate">
+            <a href="profile.html" class="link-full"></a>
+            <i class="icon icon-user"></i>
+            <span>ПРОФИЛЬ</span>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- Scripts -->
+  <script src="./assets/app.js.download" defer=""></script>
+</body>
+
+</html>
