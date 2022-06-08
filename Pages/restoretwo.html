@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>  My App </title>
+</head>
+<body>
+    <!--  Wrapper My app  -->
+    <div class="wrapper">
+        <h1> восстановление </h1>
+        <div class="wrapper-regisration">
+            <div class="logo">
+                <img src="../img/logo.svg" alt="">
+            </div>
+            <div class="person-info">
+                <div class="img">
+                    <img src="../img/Profil.jpeg" alt="">
+                </div>
+                <div class="info">
+                    <h3> diana.krasopetovna </h3>
+                </div>
+            </div>
+            <p>Если это Ваша страница, то есть два варианта восстановления. Либо введите код с телефона, к которому привязана страница, и нажмите ВХОД, либо сделайте фото на фоне этой страницы и отправьте его нам и укажите доступный номер телефона, на который мы отправим новый пароль для входа на страницу</p>
+            <form action="#">
+                <div class="form-info">
+                    <input type="number" id="number" placeholder="код с телефона">
+                    <label  for="number"><i class="fa-solid fa-check"></i></label>
+                </div>
+                <button type="submit"> далее </button>
+                <div class="form-info">
+                    <input type="text" id="phone-code" placeholder="доступный номер телефона">
+                    <label for="phone-code"><i class="fa-solid fa-check"></i></label>
+                </div>
+                <div class="form-info">
+                    <input type="file" id="send-photo" placeholder="прикрепить фото">
+                    <label for="send-photo" class="sending-photo">прикрепить фото</label>
+                </div>
+            </form>
+        </div>
+        <div class="wrapper-button">
+            <a href="Pages/registration.html"> отправить </a>
+        </div>
+    </div>
+    
+    <script src="../js/function.js"></script>
+</body>
+</html>
