@@ -1,0 +1,288 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../Fonts/Roboto/Roboto-Regular.ttf") format(ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 550px;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8ee4ff), to(white));
+  background: linear-gradient(#8ee4ff, white);
+}
+
+.wrapper h1 {
+  position: absolute;
+  top: 0;
+  font-size: 24px;
+  font-weight: 200;
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  color: #aeaeae;
+}
+
+.wrapper .person-info {
+  width: 100%;
+  height: auto;
+  padding: 4px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .person-info .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.wrapper .person-info .img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper .person-info .info h3 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.wrapper p {
+  color: #aeaeae;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 4px 12px;
+  padding: 4px;
+}
+
+.wrapper-regisration {
+  width: 100%;
+  height: auto;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.wrapper-regisration form {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper-regisration form input[type="text"], .wrapper-regisration form input[type="password"], .wrapper-regisration form input[type="email"], .wrapper-regisration form input[type="number"], .wrapper-regisration form input[type="file"], .wrapper-regisration form input[type="submit"] {
+  width: 90%;
+  height: 30px;
+  margin: 10px auto;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  background: #FFFFFF;
+  border: 3px solid #909090;
+  border-radius: 18px;
+}
+
+.wrapper-regisration form input[type="checkbox"] {
+  margin: 10px 0;
+}
+
+.wrapper-regisration form input[type="submit"] {
+  text-align: center;
+  line-height: 8px;
+  background: #AEAEAE;
+}
+
+.wrapper-regisration form label {
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.wrapper-regisration form button, .wrapper-regisration form a {
+  width: 120px;
+  height: auto;
+  margin: 10px 0;
+  font-size: 36px;
+  color: #AEAEAE;
+  font-family: Roboto;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  background: none;
+  border-radius: 12px;
+  border: 1px solid #AEAEAE;
+  outline: none;
+  -webkit-transition: color, border .4s ease;
+  transition: color, border .4s ease;
+}
+
+.wrapper-regisration form button:hover, .wrapper-regisration form a:hover {
+  cursor: pointer;
+  color: #9b9b9b;
+  border: 1px solid #9b9b9b;
+}
+
+.wrapper-regisration .form-info {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper-regisration .form-info input[type="file"] {
+  visibility: hidden;
+}
+
+.wrapper-regisration .form-info label {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  line-height: 30px;
+  font-weight: 800;
+  color: green;
+  font-size: 18px;
+}
+
+.wrapper-regisration .form-info .sending-photo {
+  position: absolute;
+  width: 90%;
+  height: 30px;
+  line-height: 24px;
+  margin: 10px 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #000;
+  border: 3px solid #909090;
+  border-radius: 18px;
+  background: #aeaeae;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-align: center;
+}
+
+.wrapper-regisration .icon-red {
+  display: block;
+  color: red;
+}
+
+.wrapper-button {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper-button a {
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#67DBFF), to(rgba(255, 243, 243, 0)));
+  background: linear-gradient(#67DBFF, rgba(255, 243, 243, 0));
+  border-radius: 0px 8px 8px 0px;
+  border: 1px solid #67DBFF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.wrapper-button a:last-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.wrapper-button a:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

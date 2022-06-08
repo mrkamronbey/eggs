@@ -1,0 +1,59 @@
+/* mobile narrow
+  -------------------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper-regisration form input[type="text"], .wrapper-regisration form input[type="password"] {
+    width: 240px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .wrapper-regisration form button {
+    width: 80px;
+    margin: 10px 0;
+    font-size: 24px;
+    letter-spacing: 0.8px;
+    border-radius: 8px;
+  }
+  .wrapper-button form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 240px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper-regisration form input[type="text"], .wrapper-regisration form input[type="password"] {
+    width: 180px;
+    height: 30px;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+  }
+  .wrapper-regisration form button {
+    width: 80px;
+    margin: 10px 0;
+    font-size: 24px;
+    letter-spacing: 0.8px;
+    border-radius: 8px;
+  }
+  .wrapper-button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper-button a {
+    width: 124px;
+    height: 30px;
+    padding: 0 2px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin: 4px 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

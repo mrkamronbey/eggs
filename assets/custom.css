@@ -1,0 +1,97 @@
+#canvas {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 500px;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#videoCam .popup__content {
+    width: 100%;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}
+
+#videoCam #snap {
+    color: white;
+}
+
+#videoCam .confirmation {
+    width: 100%;
+    height: 412.5px;
+}
+
+.app .profile__title {
+    font-size: 2rem;
+}
+
+.app .post__labels {
+    grid-template-rows: 17px !important;
+}
+
+._asc::after{
+    transform: rotate(180deg);
+}
+button {
+    margin: 0;
+}
+
+.app .post__action i.icon-filled-egg {
+    color: #000;
+    font-size: 2.7rem;
+}
+
+.popup .menu input::-webkit-input-placeholder {
+    font-size: 2rem;
+}
+
+.app .post__menu {
+    justify-content: flex-end;
+}
+
+.popup_record {
+    user-select: none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+}
+
+._recording::before{
+    transform-origin:center;
+    animation:annoying .4s ease-in infinite alternate;
+}
+
+@keyframes annoying{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.messages .messagePost-wrapper {
+    height: 70px;
+}
+
+.profile__title {
+    text-transform: uppercase;
+}
+
+.app .record__button {
+    background: url(../img/egg_no-shadow.svg) no-repeat center;
+    background-size: contain;
+}
+
+.with-popup {
+    overflow: hidden;
+}
+
+.app .post_linked {
+    margin-top: -10px;
+}
